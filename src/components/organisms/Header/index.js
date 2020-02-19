@@ -8,7 +8,7 @@ import Button from 'components/atoms/Button';
 import TextField from 'components/molecules/TextField';
 const Header = () => {
     return(
-        <header>
+        <header flexName='flexible '>
             <Paper flexName='flexible' className="left-header">
                 <Image src={logo} className="logo-img"/>
                 <Paper className="border-left"></Paper>
@@ -20,7 +20,7 @@ const Header = () => {
                 </ul>
             </Paper>
             <Paper>
-                <Button>Sign in</Button>
+                <Button bgColor='blue'>Sign in</Button>
                 <Button>Sign up</Button>
             </Paper>
            
