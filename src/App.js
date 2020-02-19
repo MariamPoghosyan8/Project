@@ -12,6 +12,8 @@ import Header from './components/organisms/Header'
 import 'sass/animate.scss';
 import 'sass/main.scss';
 import 'sass/media.scss';
+import {Button} from "./components";
+import Main from "./containers/Main";
 
 const mapStateToProps = ({ darkMode }) => ({ darkMode });
 
@@ -29,8 +31,11 @@ const App = ({
   return (
     <>
         <main className={classnames("Main", { 'darkMode': darkMode })}>
+
             {/* <p>Hello</p> */}
           <Header/>
+
+            {/* <Main/> */}
         </main>
     </>
   )

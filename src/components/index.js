@@ -19,7 +19,8 @@ import BlogCard from './molecules/BlogCard';
 import Modal from './molecules/Modal';
 
 // Organisms
-import Header from './organisms/Header';
+
+import Header from './organisms/Header'
 import Dropdown from './organisms/Dropdown';
 import Testimonials from "./organisms/Testimonals";
 import Collapse from './organisms/Collapse';

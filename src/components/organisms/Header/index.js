@@ -19,11 +19,11 @@ const Header = () => {
                     <li>BLOG</li>
                 </ul>
             </Paper>
-            <Paper className="right-header">
+            <Paper>
                 <Button>Sign in</Button>
                 <Button>Sign up</Button>
             </Paper>
-            
+           
         </header>
     )
 };
