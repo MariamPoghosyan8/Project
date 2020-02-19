@@ -7,7 +7,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import classnames from 'classnames';
-
+import Header from './components/organisms/Header'
 
 import 'sass/animate.scss';
 import 'sass/main.scss';
@@ -29,8 +29,8 @@ const App = ({
   return (
     <>
         <main className={classnames("Main", { 'darkMode': darkMode })}>
-            <p>Hello</p>
-
+            {/* <p>Hello</p> */}
+          <Header/>
         </main>
     </>
   )

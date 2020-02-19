@@ -20,7 +20,6 @@ import Modal from './molecules/Modal';
 
 // Organisms
 import Header from './organisms/Header';
-import Footer from './organisms/Footer';
 import Dropdown from './organisms/Dropdown';
 import Testimonials from "./organisms/Testimonals";
 import Collapse from './organisms/Collapse';
@@ -32,7 +31,6 @@ export {
   Paper,
   Modal,
   Header,
-  Footer,
   Button,
   Avatar,
   BlogCard,
