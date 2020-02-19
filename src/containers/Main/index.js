@@ -19,9 +19,9 @@ const Main = () => {
                         <Paper flexName='flexible jCenter'>
                             <Paper className='titleTextBlock' flexName='flexible vertical'>
                                 <Text className='extraLarge titleText'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Text>
-                                <Button className='titleButton'>Read More</Button>
+                                <Button className='titleButton' bgColor='blue'>Read More</Button>
                             </Paper>
-                          
+
                         </Paper>
                     </Paper>
                 </Paper>
