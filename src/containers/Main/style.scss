@@ -1,0 +1,21 @@
+@import "~sass/variables";
+
+
+.Main{
+  .titleTextBlock{
+    width: 550px;
+    max-height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+      .titleText{
+        font-weight: bold;
+        color: $secondary-black;
+        text-align: center;
+      }
+    .titleButton{
+      margin-top: 30px;
+    }
+  }
+}

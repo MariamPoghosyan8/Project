@@ -19,8 +19,6 @@ import BlogCard from './molecules/BlogCard';
 import Modal from './molecules/Modal';
 
 // Organisms
-import Header from './organisms/Header';
-import Footer from './organisms/Footer';
 import Dropdown from './organisms/Dropdown';
 import Testimonials from "./organisms/Testimonals";
 import Collapse from './organisms/Collapse';
@@ -31,8 +29,6 @@ export {
   Image,
   Paper,
   Modal,
-  Header,
-  Footer,
   Button,
   Avatar,
   BlogCard,
