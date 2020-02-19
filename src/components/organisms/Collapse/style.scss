@@ -1,0 +1,95 @@
+@import 'sass/variables.scss';
+
+.Collapse {
+    max-width: 70%;
+    margin: 18px auto;
+    .collapse-item {
+        padding: 0 20px;
+        padding-right: 85px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px -5px rgba(178,168,168,0.5);
+        padding: 25px 25px;
+        transition:all .3s linear;
+        &.bg-collapse {
+            background: #17A9BA;
+            color: white;
+            .Button  {
+                background: $secondary-orange;
+                cursor: pointer;
+            }
+            .title-content {
+                .Text {
+                    color: white; 
+                }
+            }
+        }
+        .title-content {
+            .Text {
+                font-weight: bold;
+                font-size: $large-font-size;
+                color: black;
+                &.darkMode {
+                    color: white;
+                }
+            }
+            .plus-icon {
+                display: none;
+            }
+        }
+    } 
+    .collapse-body {
+        overflow: hidden;
+        max-height: 0;
+        margin: auto;
+
+        &.content-opened {
+            transition: height 1s linear;
+            width: 85%;
+            max-height: 1300px;
+            padding-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 924px) {
+    .Collapse {
+        .collapse-item {
+            .title-content {
+                .Text {
+                    font-size: $medium-font-size;
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 576px) {
+        .Collapse {
+            max-width: 90%;
+            .collapse-item {
+                .Text {
+                    font-size: $small-font-size;
+                    display: flex;
+                    align-items: center;
+                }
+                .plus-icon {
+                    margin-right: 20px;
+                }
+                .btn-container {
+                    display: none;
+                }
+                .title-content {
+                    .plus-icon {
+                        display: block;
+                        &.plus-icon-2 {
+                            transform: rotate(45deg);
+                            svg {fill: white;}
+                        }
+                        svg {fill: #17A9BA;}
+                    }
+                    .Text {
+                        font-size: $small-font-size;
+                    }
+                }
+            } 
+        }
+    }
