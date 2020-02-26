@@ -25,9 +25,6 @@
     }
     &.orange {
       background-color: $secondary-orange;
-      &:hover {
-        background-color: $secondary-green;
-      }
     }
     &.small {
         font-size: $small-font-size;
@@ -35,10 +32,10 @@
     }
     &.medium {
         font-size: $medium-font-size;
-        padding: 14px 50px;
+        padding: 9px 50px;
     }
     &.large {
         font-size: $large-font-size;
-        padding: 17px 70px;
+        padding: 15px 95px;
     }
 };

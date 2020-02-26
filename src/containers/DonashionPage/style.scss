@@ -1,0 +1,20 @@
+@import 'sass/variables.scss';
+
+.DonashionPage{
+    .donate{
+        width: 680px;
+        background-color: $secondary-blue;
+        padding: 50px;
+        margin: 80px 0;
+    }
+    .donateText{
+        width: 74%;
+        text-align: center;
+        .title{
+            color: $secondary-white;
+        }
+    }
+    .donashionBut{
+        margin-top: 40px;
+    }
+}

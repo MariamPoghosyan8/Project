@@ -63,7 +63,7 @@
       height: 30px;
     }
     &.medium {
-      height: 60px;
+      height: 40px;
       font-size: 18px;
       &.withRadius {
         border-radius: 60px;
@@ -71,6 +71,7 @@
     }
   };
   .Button {
+    background-color: #FF9722;
     margin-left: -60px;
   }
 }

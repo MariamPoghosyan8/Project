@@ -13,7 +13,13 @@ import 'sass/animate.scss';
 import 'sass/main.scss';
 import 'sass/media.scss';
 import {Button} from "./components";
-import Main from "./containers/Main";
+import {
+  Main,
+  Blog,
+  AboutUs,
+  DonashionList,
+  DonashionPage,
+} from './containers'
 
 const mapStateToProps = ({ darkMode }) => ({ darkMode });
 
@@ -31,7 +37,14 @@ const App = ({
   return (
     <>
         <main className={classnames("Main", { 'darkMode': darkMode })}>
-            <Main/>
+          <Switch>
+              <Route exact path="/" component={Main} />
+              <Route exact path="/blog" component={Blog} />
+              <Route exact path="/AboutUs" component={AboutUs} />
+              <Route exact path="/DonashionList" component={DonashionList} />
+              <Route exact path="/DonashionPage" component={DonashionPage} />
+          </Switch>
+
         </main>
     </>
   )

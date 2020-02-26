@@ -1,6 +1,7 @@
 // Atoms
 import Text from './atoms/Text';
 import Icon from './atoms/Icon';
+import List from './atoms/List';
 import Image from './atoms/Image';
 import Paper from './atoms/Paper';
 import Pagination from './atoms/Pagination'
@@ -17,6 +18,7 @@ import TeamMemberCard from './molecules/TeamMemberCard';
 import ServiceInfoCard from './molecules/ServiceInfoCard';
 import BlogCard from './molecules/BlogCard';
 import Modal from './molecules/Modal';
+import  VideoBlog from './molecules/VideoBlog';
 
 // Organisms
 import Dropdown from './organisms/Dropdown';
@@ -26,6 +28,7 @@ import Collapse from './organisms/Collapse';
 export {
   Text,
   Icon,
+  List,
   Image,
   Paper,
   Modal,
@@ -34,6 +37,7 @@ export {
   BlogCard,
   Collapse,
   InfoCard,
+  VideoBlog,
   Dropdown,
   TextField,
   Pagination,

@@ -1,6 +1,5 @@
 @import "~sass/variables";
 
-
 .Main{
   .titleTextBlock{
     width: 550px;
@@ -8,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding:20px 0 80px 0;
       .titleText{
         font-weight: bold;
         color: $secondary-black;
@@ -17,5 +16,218 @@
     .titleButton{
       margin-top: 30px;
     }
+  }
+  .infoBlock {
+    .infoBlockTitle{
+      padding: 80px 0;
+      margin: 70px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .leftBox{
+      height: 300px;
+      background-color: $secondary-blue;
+      flex-grow: 1;
+    }
+    .size{
+
+      max-width: 1280px;
+      flex-grow: 40;
+      .blueBox {
+        border-top-right-radius: 15px;
+        .textContainer{
+          width: 83%;
+          padding: 30px;
+          .textContainerTitle{
+            color: $secondary-white;
+          }
+          .textContainerInfo{
+            margin-top: 30px;
+            color: $secondary-white;
+          }
+        }
+        width: 55%;
+        padding: 13px;
+        background-color: $secondary-blue;
+      }
+      .container {
+        position: relative;
+        bottom: 100px;
+        .whiteBox {
+          border-top-left-radius: 15px;
+          .textContainer{
+            width: 83%;
+            padding: 50px;
+            .textContainerInfo{
+              margin-top: 30px;
+              color: $secondary-black;
+            }
+          }
+          width: 55%;
+          height: 200px;
+          background-color: $secondary-white;
+        }
+      }
+    }
+    .rightBox{
+      position: relative;
+      bottom: 100px;
+      flex-grow: 1;
+      height: 200px;
+      background-color: $secondary-white;
+      display: flex;
+      justify-content: right;
+      align-self: flex-end;
+    }
+  }
+  .videoBlock{
+    .videoBlockText{
+      padding: 70px 0;
+    }
+    .videoBox{
+      padding: 0 20px 20px 20px;
+      .videoItem{
+        margin-left: 10px;
+        &:hover{
+          cursor: pointer;
+
+        }
+      }
+      .videoItem2{
+        margin:20px 0 0 10px;
+      }
+      .videoItem3{
+        margin-top: 20px;
+      }
+    }
+  }
+  .waveBlock{
+    .waveBlockText{
+      padding: 70px 0;
+    }
+    .wavePage-content{
+      height: 100%;
+    }
+    .wave{
+      width: 100%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 740px;
+      .leftSideContent{
+        align-items: flex-end;
+         padding-bottom: 70px;
+      .leftside{
+        max-width: 350px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 30px;
+        .waveBlockTitle{
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .rightSideContent{
+      align-items: flex-start;
+      padding-top: 50px;
+      .rightside{
+        border-radius: 10px;
+        max-width: 350px;
+        padding: 30px;
+        background-color: white;
+        .waveBlockTitle{
+          padding-bottom: 10px;
+        }
+
+      }
+    }
+      .page-content{
+        height: 100%;
+      }
+    }
+  }
+  .SliderBlock{
+    .leftBox{
+      height: 430px;
+      background-color: $secondary-blue;
+      flex-grow: 1;
+    }
+    .size{
+      max-width: 1280px;
+      flex-grow: 40;
+      .blueBox{
+        width: 33%;
+        padding: 40px;
+        background-color: $secondary-blue;
+        .imgContainer{
+          .sliderimg{
+            position: relative;
+            z-index: 9999;
+          }
+        }
+      }
+      .container {
+        position: relative;
+        bottom: 100px;
+        .whiteBox {
+          border-top-left-radius: 15px;
+          width: 77%;
+          padding: 50px;
+          background-color: #F7F7F7;
+          display: flex;
+          align-items: center;
+          .insideContain{
+            width: 85%;
+          .SlideContainer{
+            width: 80%;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+          }
+          .SliderTextTitle{
+            padding-right: 50px;
+          }
+          .leftArrow{
+            width: 50px;
+            height:50px;
+            margin-top: 50px;
+            background-color: white;
+          }
+          .rightArrow{
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            background-color: white;
+          }
+        }
+        }
+      }
+    }
+    .rightBox{
+      position: relative;
+      bottom: 100px;
+      flex-grow: 1;
+      height: 200px;
+      background-color: $secondary-white;
+      display: flex;
+      justify-content: right;
+      align-self: flex-end;
+    }
+  }
+  .getInTouchBlock{
+    width: 50%;
+    padding: 25px;
+    .getInTouchBlockTitle{
+      padding: 25px;
+    }
+    .getInTouchBlockText{
+      padding: 25px;
+    }
+    .textField{
+      padding: 25px;
+    }
+  }
+  .imgBlock{
+    width: 50%;
   }
 }
