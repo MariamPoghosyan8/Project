@@ -1,18 +1,441 @@
-.left-header{
-    margin-top: 30px;
-}
-.border-left{
-    border-left: 1px solid gray;
-    height: 100px;
-}
-.menu{
-    list-style: none;
+header{
     display: flex;
-    align-items: center;
-    margin-left: 40px;
+    justify-content: space-around;
+    .left-header{
+        margin-top: 15px;
+        .logo-img{
+            height: auto;
+            width: 150px;
+        }
+        .border-left{
+            height: 60px;
+            width: 1px;
+            background-color: grey;
+            margin-left: 30px;
+        }
+        .menu{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            li{
+                padding-left: 30px;
+                color: black;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+    .right-header{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        width: 28%;
+        justify-content: flex-end;
+        .header-one{
+            display: none;
+            .sign-up{
+                color: black;
+                margin-left: 20px;
+            }
+        }
+        .header-two{
+            display: flex;
+            width: 100%;
+            // display: none;
+            .inputandicon{
+                width: 100%;
+            }
+            .text-field{
+                height: 44px;
+                width: 100%;
+                color: black;
+                border-right: 0px;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 0px;
+                padding-right: 0px;
+            }
+            .searchIconOne{
+                background-color: white;
+                width: 34px;
+                height: 44px;
+                border: solid 1px gray;
+                border-left: 0px    ;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+                padding: 5px;
+            }
+            .header-two-img{
+                min-width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 20px;
+                background-image: url("../../../assets/Header photos/nara.jpg");
+                background-size: cover;
+            }
+        }
+        .header-tree{
+            display: flex;
+            display: none;
+            .header-two-img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 30px;
+                background-image: url("../../../assets/Header photos/nara.jpg");
+                background-size: cover;
+            }
+            .search{
+                width: 30px;
+                height: 30px;
+                margin-top: 9px;
+                opacity: 0.5;
+                background-image: url("../../../assets/Header photos/search.svg");
+            }
+        }
+        .header-four{
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            display: none;
+            .header-two-img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 30px;
+                background-image: url("../../../assets/Header photos/nara.jpg");
+                background-size: cover;
+            }
+            .search{
+                width: 30px;
+                height: 30px;
+                margin-top: 9px;
+                opacity: 0.5;
+                background-image: url("../../../assets/Header photos/search.svg");
+            }
+            .header-hover{
+                position: absolute;
+                width: 280px;
+                height: 333px;
+                top: 110px;
+                border: solid 1px #9d979740;
+                border-radius: 15px;
+                display: none;
+                .data{
+                    display: flex;
+                    margin-top: 20px;
+                }
+                .img-hover{
+                    width: 70px;
+                    height: 70px;
+                }
+                .data-text{
+                    margin-left: 10px;
+                }
+                .name{
+                    font-size: 14px;
+                    font-weight: 900;
+                    padding-top: 15px;
+                }
+                .country{
+                    font-size: 12px;
+                    padding-top: 5px;
+                    color: black;
+                }
+                .border-bottom{
+                    border: 1px solid #979797;
+                    opacity: 0.2;
+                    width: 271px;
+                    background-color: black;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                }
+                .hover-text{
+                    color: black;
+                    padding-left: 20px;
+                    padding-top: 9px;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                .sign-out{
+                    color: #047CBC;
+                    padding-top: 15px;
+                }
+            }
+            .header-two-img:hover + .header-hover  {
+                display: block !important;
+            }
+        }
+    }
+    .bgm-content{
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        display: none;
+        position: relative;
+        .burger-menu{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .line:nth-child(1){
+            margin-top: 0;
+        }
+        .line{
+            width: 20px;
+            height: 3px;
+            background-color: #047CBC;
+            border-radius: 5px;
+            margin-top: 3px;
+        }
+        .sign-in-gray{
+            color: black;
+            font-weight: 600;
+            margin-top: 14px;
+        }
+        .list-menu{
+            position: absolute;
+            width: 100%;
+            top: 107px;
+            background-color: #047CBC;
+            padding: 20px 0px;
+            display: none;
+        }
+        .mobile-menu{
+            li{
+                color: white;
+                font-weight: bold;
+                padding-top: 15px;
+                padding-left: 90px;
+            }
+            li:last-of-type(){
+                padding-top: 20px;
+            }
+        } 
+    }
+    .content{
+        padding: 30px 0;
+        left: 20px;
+        flex-grow: 1;
+        display: none;
+        position: relative;
+        .burgerandlogo{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .burger-menu-second{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .line-second:nth-child(1){
+            margin-top: 0;
+        }
+        .line-second{
+            width: 20px;
+            height: 3px;
+            background-color: #047CBC;
+            border-radius: 5px;
+            margin-top: 3px;
+        }
+        .list-menu-second{
+            position: absolute;
+            width: 100%;
+            top: 107px;
+            right: 20px;
+            background-color: #047CBC;
+            padding: 20px 0px;
+            // display: none;
+            padding-right: 20px;
+            .mobile-menu-second{
+                li{
+                    color: white;
+                    font-weight: bold;
+                    padding-top: 15px;
+                    padding-left: 25px;
+                }
+                li:first-of-type{
+                    padding-top: 0px;
+                }
+            }  
+        }
+        .info-content{
+            width: 40%;
+            .text-field-second{
+                height: 44px;
+                width: 100%;
+                border: none;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 0px;
+                padding-right: 0px;
+            }
+            .searchIcon{
+                background-color: white;
+                width: 34px;
+                height: 44px;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+                padding: 5px;
+            }
+            .data-mobile{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                .mobile-img{
+                    min-width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background-image: url("../../../assets/Header photos/nara.jpg");
+                    background-size: cover;
+                    margin-right: 20px;
+                } 
+                .surname{
+                    color: white;
+                }
+            }
+            .edit{
+                display: flex;
+                margin-top: 20px;
+                .icon{
+                    width: 25px;
+                    height: auto;
+                }
+                .edit-text{
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+            .reminder{
+                display: flex;
+                margin-top: 20px;
+                .icon{
+                    width: 25px;
+                    height: auto;
+                }
+                .bell-text{
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+            .global{
+                display: flex;
+                margin-top: 20px;
+                .icon{
+                    width: 25px;
+                    height: auto;
+                }
+                .global-text{
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+            .audit{
+                display: flex;
+                margin-top: 35px;
+                .icon{
+                    width: 25px;
+                    height: auto;
+                }
+                .audit-text{
+                    min-width: 180px;
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+            .shield{
+                display: flex;
+                margin-top: 20px;
+                .icon{
+                    width: 25px;
+                    height: auto;
+                }
+                .shield-text{
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+            .mobileSignOut{
+                color: white;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
 }
-.menu>li{
-    padding-left: 30px;
-    color: black;
-    font-weight: bold;
+@media screen and (max-width: 1045px){
+    .border-left{
+        height: 50px !important;
+        margin-left: 20px !important;
+    }
+    .menu{
+        margin-left: 7px !important;
+    }
+    .menu li{
+        padding-left: 12px !important;
+        text-align: center;
+        font-size: 13px; 
+    }
+}
+@media screen and (max-width: 1080px){
+    .Button.small {
+        padding: 9px 20px;
+    }
+    .sign-up{
+        margin-left: 5px !important;
+    }
+}
+@media screen and (max-width: 780px){
+    .logo-img{
+        width: 150px;
+        height: auto;
+    }
+    .left-header{
+        display: none !important;
+    }
+   .right-header{
+       display: none !important;
+   }
+   .bgm-content{
+       display: flex !important;
+       display: none !important;
+    } 
+    .content{
+        display: flex !important;
+    }
+    &.isActive {
+        background-color: #047CBC;
+        .list-menu{
+            display: block;
+        }
+        .sign-in-gray{
+            color: white;
+        }
+    }
+}
+@media screen and (max-width: 550px){
+    .list-menu-second{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-content{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .info-content{
+        max-width: 350px;
+        width: 80% !important;
+    }
 }
