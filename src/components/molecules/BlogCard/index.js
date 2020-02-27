@@ -9,50 +9,40 @@ import {
 } from 'components';
 
 import './style.scss'
+import Button from 'components/atoms/Button';
 
 const BlogCard = ({
   src,
-  createdDate,
   width,
-  views,
   title,
   description,
-  darkMode,
-  restProps
+  restProps,
+  button
 }) =>{
 
-  const date = dayjs(createdDate).format('MM.DD.YYYY');
 
   return  (
     <Paper
-      className={classnames("BlogCommentCard",{ 'darkMode': darkMode })}
-      style={{maxWidth: width}}
+      className={classnames("BlogCommentCard")}
       {...restProps}>
-      <Paper flexName="flexible aCenter" className='imageWrapper'>
-        <Image src={src} width='100%' height='auto'></Image>
-      </Paper>
-      <Paper className='blogCardInfo' flexName='flexible vertical'>
-        <Paper>
-        <Text darkMode={darkMode} className='extraLarge blogCommentTitle'>{title}</Text>
+        <Paper flexName='flexible aCenter'>
+            <Paper>
+              <Image
+              src={src}
+              width={width}
+              height='auto'
+              />
+            </Paper>
+            <Paper flexName='flexible vertical' className='desc'>
+               <Text className='extraLarge title'>{title}</Text>
+               <Text className='large description'>{description}</Text>
+               <Paper flexName='flexible jEnd'>
+                {button && <Button size='small' bgColor='blue'>{button}</Button>}
+               </Paper>
+            </Paper>
         </Paper>
-        <Paper>
-          <Text darkMode={darkMode} className='small desc'>{description}</Text>
-        </Paper>
-      </Paper>
-      <Paper flexName='flexible jBetween' className='infoblock'>
-        <Paper>
-          <Text darkMode={darkMode} className='small'>{date}</Text>
-        </Paper>
-        <Paper>
-          <Text darkMode={darkMode} className='small'> {views} </Text>
-        </Paper>
-      </Paper>
     </Paper>
   )
-};
-
-BlogCard.defaultProps = {
-  width: '350px'
 };
 
 export default BlogCard;

@@ -1,0 +1,29 @@
+@import 'sass/variables.scss';
+.AboutUs{
+    background-color: #F7F7F7;
+    .content{
+        .textContent{
+            width: 75%;
+            height: 500px;
+            background-color:$secondary-white;
+            border-radius: 15px;
+            .size{
+                width: 85%;
+                padding: 70px;
+                *{
+                    padding-bottom: 50px;
+                }
+            }
+        }
+        .imgContent{
+            width: 40%;
+            height: 400px !important;
+            padding: 30px;
+            background-color: $secondary-blue;
+            border-radius: 15px;
+            position: relative;
+            top: 50px;
+            right: 90px;
+        }
+    }
+}

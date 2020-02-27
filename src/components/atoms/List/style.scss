@@ -1,0 +1,36 @@
+.List{
+    margin: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: 50px;
+    .radiusImage{
+        position: absolute;
+        // top: 100px;
+        z-index: 1;
+    }
+    .listContent{
+        background-color: white;
+        padding: 120px 60px 0 60px;
+        border-radius: 5px;
+        position: relative;
+        top: 100px;
+        .textBlock{
+            padding: 20px;
+            :first-child{
+                color: #000;
+            }
+        }
+        .divaider{
+            margin: auto;
+            width: 170px;
+            border: 1px solid #979797;
+        }
+        .shareBlog{
+            :first-child{
+            }
+            .icons{
+                padding: 20px;
+            }
+        }
+    }
+}

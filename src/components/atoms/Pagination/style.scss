@@ -7,14 +7,19 @@
     margin: 50px 0;
    
     .paginationIcon{
-        padding: 0 10px;
+      border: 1px solid #BDC0CE;
+      padding: 5px 8px;
+      margin: 5px;
     }
     .numbers{
         font-size: $extraLarge-font-size;
-        padding: 10px;
+        border:1px solid #BDC0CE;
+        padding:0px 8px;
+        margin: 7px;
         cursor: pointer;
         &.current {
-          color: $secondary-green;
+          background-color: $secondary-blue;
+          color: white;
         }
         &.darkMode{
           color: $secondary-white;
