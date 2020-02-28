@@ -1,0 +1,66 @@
+footer{
+    width: 100%;
+    background-color: #F7F7F7;
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .logo-img{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .menu{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        li{
+            padding-left: 30px;
+            color: black;
+            font-weight: 800;
+            cursor: pointer;
+        }
+    }
+    .downloadStore{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .appstore-img{
+            width: 128px;
+        }
+        .googleplay-img{
+            width: 114px;
+            margin-left: 20px;
+
+        }
+    }
+    .levelup{
+        text-align: center;
+        opacity: 0.5;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .logo-img{
+        width: 130px  !important;
+    }
+    .menu{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px !important;
+    }
+    .menu>li{
+        padding-top: 20px !important;
+    }
+    .appstore-img{
+        width: 92px !important;
+    }
+    .googleplay-img{
+        width: 87px !important;
+    }
+}

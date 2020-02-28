@@ -7,7 +7,8 @@ import {
   Redirect,
 } from 'react-router-dom';
 import classnames from 'classnames';
-import Header from './components/organisms/Header'
+import Header from './components/organisms/Header';
+import Footer from './components/organisms/Footer'
 
 import 'sass/animate.scss';
 import 'sass/main.scss';
@@ -38,14 +39,14 @@ const App = ({
     <>
     
         <main className={classnames("Main", { 'darkMode': darkMode })}>
-          <Switch>
+          {/* <Switch>
               <Route exact path="/" component={Main} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/AboutUs" component={AboutUs} />
               <Route exact path="/DonashionList" component={DonashionList} />
               <Route exact path="/DonashionPage" component={DonashionPage} />
-          </Switch>
-
+          </Switch> */}
+          <Footer/>
         </main>
     </>
   )
