@@ -1,5 +1,8 @@
 import React from 'react';
-
+import {
+    NavLink,
+    withRouter,
+  } from 'react-router-dom';
 import {
     logo,
     search,
@@ -23,13 +26,39 @@ const Header = () => {
     return(
         <header className="isActive">
             <Paper flexName='flexible' className="left-header">
-                <Image src={logo} className="logo-img"/>
+                <NavLink to='/'>
+                    <Image src={logo} className="logo-img"/>
+                </NavLink>
                 <Paper className="border-left"></Paper>
                 <ul className="menu">
-                    <li className="menu-lsit">DONATIONS LISTS</li>
-                    <li>DONATIONS PAGE</li>
-                    <li>ABOUT US</li>
-                    <li>BLOG</li>
+                    <li className="menu-lsit">
+                        <NavLink
+                            to="/DonashionList"
+                        >
+                            DONATIONS LISTS
+                        </NavLink>
+                    </li>
+                    <li>
+                         <NavLink
+                            to="/DonashionPage"
+                         >
+                            DONATIONS PAGE
+                        </NavLink>
+                    </li>
+                    <li>
+                         <NavLink
+                            to="/AboutUs"
+                         >
+                           ABOUT US
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/blog"
+                        >
+                           BLOG
+                        </NavLink>
+                    </li>
                 </ul>
             </Paper>
             <Paper className="right-header">
@@ -100,7 +129,7 @@ const Header = () => {
                     </Paper>
                     <Paper></Paper>
                 </Paper>
-                <Paper flexName="flexible jBetween"                      className="list-menu-second">
+                <Paper flexName="flexible jBetween"  className="list-menu-second">
                     <ul className="mobile-menu-second">
                         <li>DONATIONS LISTS</li>
                         <li>DONATIONS PAGE</li>

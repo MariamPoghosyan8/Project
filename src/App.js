@@ -36,8 +36,8 @@ const App = ({
 
   return (
     <>
-    
-        <main className={classnames("Main", { 'darkMode': darkMode })}>
+        <Header/>
+        <main className={classnames("Main")}>
           <Switch>
               <Route exact path="/" component={Main} />
               <Route exact path="/blog" component={Blog} />
