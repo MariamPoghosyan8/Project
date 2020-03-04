@@ -7,7 +7,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import classnames from 'classnames';
-
+import Header from './components/organisms/Header'
 
 import 'sass/animate.scss';
 import 'sass/main.scss';
@@ -36,6 +36,7 @@ const App = ({
 
   return (
     <>
+    
         <main className={classnames("Main", { 'darkMode': darkMode })}>
           <Switch>
               <Route exact path="/" component={Main} />

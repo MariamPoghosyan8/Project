@@ -21,6 +21,8 @@ import Modal from './molecules/Modal';
 import  VideoBlog from './molecules/VideoBlog';
 
 // Organisms
+
+import Header from './organisms/Header'
 import Dropdown from './organisms/Dropdown';
 import Testimonials from "./organisms/Testimonals";
 import Collapse from './organisms/Collapse';
@@ -32,6 +34,7 @@ export {
   Image,
   Paper,
   Modal,
+  Header,
   Button,
   Avatar,
   BlogCard,
