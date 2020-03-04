@@ -7,7 +7,8 @@ import {
   Redirect,
 } from 'react-router-dom';
 import classnames from 'classnames';
-import Header from './components/organisms/Header'
+import Header from './components/organisms/Header';
+import Footer from './components/organisms/Footer'
 
 import 'sass/animate.scss';
 import 'sass/main.scss';
@@ -45,7 +46,6 @@ const App = ({
               <Route exact path="/DonashionList" component={DonashionList} />
               <Route exact path="/DonashionPage" component={DonashionPage} />
           </Switch>
-
         </main>
     </>
   )

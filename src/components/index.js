@@ -26,6 +26,7 @@ import Header from './organisms/Header'
 import Dropdown from './organisms/Dropdown';
 import Testimonials from "./organisms/Testimonals";
 import Collapse from './organisms/Collapse';
+import Footer from './organisms/Footer'
 
 export {
   Text,
@@ -35,6 +36,7 @@ export {
   Paper,
   Modal,
   Header,
+  Footer,
   Button,
   Avatar,
   BlogCard,
