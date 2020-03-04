@@ -8,18 +8,23 @@
    
     .paginationIcon{
       border: 1px solid #BDC0CE;
-      padding: 5px 8px;
+      border-radius: 6px;
+      padding: 9px 15px;
       margin: 5px;
     }
     .numbers{
         font-size: $extraLarge-font-size;
         border:1px solid #BDC0CE;
-        padding:0px 8px;
+        border-radius: 6px;
+        font-size: 23px;
+        padding:5px 15px;
         margin: 7px;
+        color: #000000;
         cursor: pointer;
         &.current {
           background-color: $secondary-blue;
           color: white;
+         
         }
         &.darkMode{
           color: $secondary-white;

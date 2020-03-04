@@ -19,16 +19,6 @@ import  './style.scss';
 
 
 const Main = () => {
-    const reducer = (state, action) => {
-        switch(action.type){
-            case 'PREW': return state - 1; 
-            case 'NEXT': return state + 1;
-            default: return state;
-        }
-    }
-
-    const [testimonialsShowIndex, setTestimonialsShowIndex] = useReducer(reducer, 0);   
-
     const testimonialsData = [
         {
            img: img4,
@@ -45,6 +35,19 @@ const Main = () => {
         }
     ];
 
+    const reducer = (state, action) => {
+        console.log(testimonialsData.length)
+        switch(action.type){
+            case 'PREW': return state == 0 ? testimonialsData.length - 1 : state - 1; 
+            case 'NEXT': return state == testimonialsData.length - 1  ? 0 : state + 1;
+            default: return state;
+        }
+    }
+
+    const [testimonialsShowIndex, setTestimonialsShowIndex] = useReducer(reducer, 0);   
+
+
+
     return(
        <>
             <section>
@@ -56,13 +59,13 @@ const Main = () => {
                                 <Button className='titleButton' size='small' bgColor='blue'>Read More</Button>
                             </Paper>
                             <Paper flexName='flexible'>
-                                <Image src={img} width='900px'height='auto' />
+                                <Image src={img} width='900px'height='auto' className='coverPhoto' />
                             </Paper>
                         </Paper>
                     </Paper>
                     <Paper className='infoBlock' >
                         <Text className='doubleExtraLarge infoBlockTitle' >WHAT WE DO</Text>
-                        <Paper flexName='flexible grow'>
+                        <Paper flexName='flexible grow' className='contain'>
                             <Paper className='leftBox'></Paper>
                             <Paper className='size'>
                                 <Paper flexName='flexible'>
@@ -90,15 +93,15 @@ const Main = () => {
                             <Text className='doubleExtraLarge videoBlockText'>WHAT WE DO</Text>
                         </Paper>
 
-                        <Paper className='page-content' flexName='flexible'>
-                            <VideoBlog width='528px' height='729px' src={img2}/>
+                        <Paper className='page-content media' flexName='flexible'>
+                            <VideoBlog width='100%' height='auto' src={img2}/>
                             <Paper flexName='flexible vertical'  className='videoBox'>
-                                <VideoBlog className='videoItem' width='350px' height='350px' src={img3}/>
-                                <VideoBlog className='videoItem2' width='350px' height='350px' src={img3}/>
+                                <VideoBlog className='videoItem' width='100%' height='auto' src={img3}/>
+                                <VideoBlog className='videoItem2' width='100%' height='auto' src={img3}/>
                             </Paper>
                             <Paper flexName='flexible vertical' className='videoBox'>
-                                <VideoBlog width='350px' height='350px' src={img3}/>
-                                <VideoBlog className='videoItem3' width='350px' height='350px' src={img3}/>
+                                <VideoBlog width='100%' height='auto' src={img3}/>
+                                <VideoBlog className='videoItem3' width='100%' height='auto' src={img3}/>
                             </Paper>
                         </Paper>
                     </Paper>
@@ -117,8 +120,8 @@ const Main = () => {
                                 <Paper flexName='flexible aCenter'>
                                 <Image 
                                 src={img}
-                                width='550px'
-                                height='450px'
+                                width='100%'
+                                height='auto'
                                 className='waveBlockImg'
                                 />
                                 </Paper>
@@ -158,10 +161,10 @@ const Main = () => {
                                             </Paper>
                                             <Paper flexName='flexible jEnd'>
                                                 <Paper className='leftArrow' flexName='flexible aCenter jCenter' onClick={() => setTestimonialsShowIndex({type: 'PREW'})}>
-                                                    <Icon name='arrowLeft'/>
+                                                    <Icon name='arrowLeft' width={20} height={20}/>
                                                 </Paper>
                                                 <Paper className='rightArrow' flexName='flexible aCenter jCenter' onClick={() => setTestimonialsShowIndex({type: 'NEXT'})}>
-                                                    <Icon name='arrowRight'/>
+                                                    <Icon name='arrowRight' width={20} height={20}/>
                                                 </Paper>
                                             </Paper>
                                         </Paper>
@@ -172,7 +175,7 @@ const Main = () => {
                             <Paper className='rightBox'></Paper>
                         </Paper>
                     </Paper>
-                    <Paper className='page-content' flexName='flexible'>
+                    <Paper className='page-content getInTouchMedia' flexName='flexible'>
                         <Paper className='getInTouchBlock' flexName='flexible vertical'>
                             <Text className='doubleExtraLarge getInTouchBlockTitle'>Get in touch</Text>
                             <Text className='large getInTouchBlockText'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>

@@ -25,7 +25,7 @@ const BlogCard = ({
     <Paper
       className={classnames("BlogCommentCard")}
       {...restProps}>
-        <Paper flexName='flexible aCenter'>
+        <Paper flexName='flexible aCenter' className='item'>
             <Paper>
               <Image
               src={src}
@@ -36,7 +36,7 @@ const BlogCard = ({
             <Paper flexName='flexible vertical' className='desc'>
                <Text className='extraLarge title'>{title}</Text>
                <Text className='large description'>{description}</Text>
-               <Paper flexName='flexible jEnd'>
+               <Paper flexName='flexible jEnd' className='button'>
                 {button && <Button size='small' bgColor='blue'>{button}</Button>}
                </Paper>
             </Paper>

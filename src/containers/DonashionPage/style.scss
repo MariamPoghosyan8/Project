@@ -6,6 +6,7 @@
         background-color: $secondary-blue;
         padding: 50px;
         margin: 80px 0;
+        border-radius: 16px;
     }
     .donateText{
         width: 74%;
@@ -16,5 +17,23 @@
     }
     .donashionBut{
         margin-top: 40px;
+    }
+}
+@media screen and (max-width: 1060px){
+    .DonashionPage{
+        .donate{
+            width: 100%;
+            .donateText{
+                width: 100%;
+                .title{
+                    font-size: 18px;
+                }
+            }
+            .donashionBut{
+                .Button {
+                    padding: 15px 74px;
+                }
+            }
+        }
     }
 }

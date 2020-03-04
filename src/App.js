@@ -37,16 +37,15 @@ const App = ({
 
   return (
     <>
-    
-        <main className={classnames("Main", { 'darkMode': darkMode })}>
-          {/* <Switch>
+        <Header/>
+        <main className={classnames("Main")}>
+          <Switch>
               <Route exact path="/" component={Main} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/AboutUs" component={AboutUs} />
               <Route exact path="/DonashionList" component={DonashionList} />
               <Route exact path="/DonashionPage" component={DonashionPage} />
-          </Switch> */}
-          <Footer/>
+          </Switch>
         </main>
     </>
   )
