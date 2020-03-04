@@ -18,12 +18,14 @@
     }
   }
   .infoBlock {
+
     .infoBlockTitle{
       padding: 80px 0;
       margin: 70px 0;
       display: flex;
       justify-content: center;
-    }
+    } 
+  .contain{
     .leftBox{
       height: 300px;
       background-color: $secondary-blue;
@@ -80,6 +82,7 @@
       align-self: flex-end;
     }
   }
+  }
   .videoBlock{
     .videoBlockText{
       padding: 70px 0;
@@ -94,7 +97,7 @@
         }
       }
       .videoItem2{
-        margin:20px 0 0 10px;
+        margin:9px 0 0 10px;
       }
       .videoItem3{
         margin-top: 20px;
@@ -110,15 +113,19 @@
     }
     .wave{
       width: 100%;
-      background-size: contain;
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 740px;
+      height: auto;
+      padding: 100px 0;
       .leftSideContent{
         align-items: flex-end;
          padding-bottom: 70px;
+         width: 50%;
+         position: relative;
+         top: 150px;
       .leftside{
-        max-width: 350px;
+        width: 100%;
         border-radius: 10px;
         background-color: white;
         padding: 30px;
@@ -130,11 +137,14 @@
     .rightSideContent{
       align-items: flex-start;
       padding-top: 50px;
+      width: 50%;
       .rightside{
         border-radius: 10px;
-        max-width: 350px;
+        width: 100%;
         padding: 30px;
         background-color: white;
+        position: relative;
+         bottom: 140px;
         .waveBlockTitle{
           padding-bottom: 10px;
         }
@@ -147,6 +157,7 @@
     }
   }
   .SliderBlock{
+    margin-top: 40px;
     .leftBox{
       height: 430px;
       background-color: $secondary-blue;
@@ -197,6 +208,7 @@
             width: 50px;
             height: 50px;
             margin-top: 50px;
+            margin-left: 15px ;
             background-color: white;
           }
         }
@@ -207,8 +219,8 @@
       position: relative;
       bottom: 100px;
       flex-grow: 1;
-      height: 200px;
-      background-color: $secondary-white;
+      height: 344px;
+      background-color:#F7F7F7;
       display: flex;
       justify-content: right;
       align-self: flex-end;
@@ -230,4 +242,272 @@
   .imgBlock{
     width: 50%;
   }
+}
+@media screen and (max-width: 1060px){
+
+  .Main{
+    .coverPhoto{
+      width: 100% !important;
+    }
+    .infoBlock{
+      .infoBlockTitle{
+        margin: 30px 0 !important;
+      }
+      .contain{
+        flex-direction: column;
+        .leftBox{
+          width: 0;
+          height: 0;
+        }
+        .size{
+          .blueBox{
+            width: 100%;
+            .textContainer{
+              width: 100%;
+            }
+          }
+          .container{
+            bottom: 0;
+            .whiteBox{
+              height: 200px;
+              width: 100%;
+              .textContainer{
+                width: 100%;
+              }
+            }
+          }
+
+        }
+
+        .rightBox{
+          height: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .waveBlock{
+      .wave{
+        .leftSideContent{
+          width: 70%;
+          }
+        .rightSideContent{
+          width: 70%;
+          }
+       }
+      }
+
+      .videoBlock{
+        .media{
+          flex-direction: column;
+          align-items: center;
+        }
+        .videoBlockText{
+          margin-top: 20px;
+        }
+        .videoBox{
+          .videoItem{
+            margin-left: 3px !important;
+            margin-top: 10px;
+          }
+          .videoItem2{
+            margin: 9px 0 0 3px;
+          }
+        }
+      }
+      .SliderBlock{
+        .leftBox{
+          height: 0 !important;
+        }
+        .size{
+          .blueBox{
+            width: 0 !important;
+            padding: 0 !important;
+            background-color:none !important;
+            .imgContainer{
+              .sliderimg{
+                width: 100%;
+                height: 315px;
+                padding: 5px;
+              }
+            }
+          }
+          .container{
+            bottom: 0px !important;
+            .whiteBox{
+              .insideContain{
+               .SlideContainer{
+                 width: 100% !important;
+               }
+              }
+            }
+     
+          }
+        }
+        .rightBox{
+          height: 0 !important;
+        }
+
+
+
+    }
+    .getInTouchMedia{
+      flex-direction: column;
+      .getInTouchBlock{
+        width: 100% !important;
+        .getInTouchBlockText{
+          padding: 0 !important;
+        }
+        .getInTouchBlockTitle {
+          padding: 0 !important;
+          padding-bottom: 30px !important;
+        }
+      }
+      .imgBlock{
+        width: 100%;
+      }
+      .textField{
+        .TextFieldComponent{
+          .Button.medium{
+            width: 50%;
+            padding: 9px 10px !important;
+          }
+        }
+      }
+    }
+
+    }
+}
+@media screen and (max-width: 1000px){
+  .Main{
+
+    .waveBlock{
+      .wave{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .leftSideContent{
+          width: 38%;
+          top: 0px;
+          
+        }
+        .rightSideContent{
+          width: 38%;
+          padding-top: 0px;
+          margin-top: 40px;
+          .rightside{
+            bottom: 0px;
+          }
+        
+        }
+        .wavePage-content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+  }
+}
+}
+
+@media screen and (max-width: 800px){
+  .Main{
+    .infoBlock{
+      .contain{
+        .size{
+          .container{
+            .whiteBox{
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+    .waveBlock{
+      .wave{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .leftSideContent{
+          width: 60%;
+          top: 0px;
+          
+        }
+        .rightSideContent{
+          width: 60%;
+          padding-top: 0px;
+          margin-top: 40px;
+          .rightside{
+            bottom: 0px;
+          }
+        
+        }
+        .wavePage-content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+  }
+  .SliderBlock{
+    .size{
+      .container{
+        padding: 10px !important;
+        .whiteBox{
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+}
+@media screen and (max-width: 800px){
+  .Main{
+    .titleTextBlock{
+      width: 100%;
+    }
+    .waveBlock{
+      .wave{
+        .leftSideContent{
+          width: 75%;
+        }
+        .rightSideContent{
+          width: 75%;
+        }
+      }
+  }
+}
+}
+@media screen and (max-width: 390px){
+  .Main{
+    .waveBlock{
+      .wave{
+        .leftSideContent{
+          width: 100%;
+        }
+        .rightSideContent{
+          width: 100%;
+        }
+      }
+  }
+  .SliderBlock{
+    .size{
+      .whiteBox{
+        .insideContain{
+          .SlideContainer{
+            padding: 0 !important;
+          }
+        }
+      }
+      .blueBox{
+        .imgContainer{
+          .sliderimg{
+            width: 300px !important;
+            height: auto !important;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
 }

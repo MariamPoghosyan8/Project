@@ -5,3 +5,12 @@
         padding: 70px;
     }
 }
+
+@media screen and (max-width: 350px){
+ .DonashionList{
+     .donators{
+         padding: 60px;
+         font-size: 14.8px;
+     }
+ }
+}

@@ -11,13 +11,17 @@
     .listContent{
         background-color: white;
         padding: 120px 60px 0 60px;
-        border-radius: 5px;
+        border-radius: 8px;
         position: relative;
         top: 100px;
         .textBlock{
-            padding: 20px;
+            padding: 0 20px 20px 20px;
             :first-child{
                 color: #000;
+            }
+            .place{
+                color: #000;
+                opacity: 0.5;
             }
         }
         .divaider{
@@ -26,10 +30,27 @@
             border: 1px solid #979797;
         }
         .shareBlog{
-            :first-child{
+            .share{
+                padding-top: 20px;
+                color: #000 !important;
+                opacity: 0.2;
             }
             .icons{
                 padding: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    .List{
+        .listContent{
+            .textBlock{
+                .title{
+                   font-size: 17px; 
+                }
+                .place{
+                    font-size: 14px;
+                }
             }
         }
     }

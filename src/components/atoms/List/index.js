@@ -20,12 +20,12 @@ const List = ({
             </Paper>
             <Paper className='listContent'>
                 <Paper flexName='flexible vertical jCenter  aCenter' className='textBlock'>
-                    <Text className='extraLarge'>{title}</Text>
-                    <Text className='large'>{place}</Text>
+                    <Text className='extraLarge title'>{title}</Text>
+                    <Text className='large place'>{place}</Text>
                 </Paper>
                 <Paper className='divaider'></Paper>
                 <Paper className='shareBlog' flexName='flexible vertical aCenter'>
-                    <Text>share width</Text>
+                    <Text className='share'>share width</Text>
                     <Paper flexName='flexible'>
                         <Paper className='icons'>
                             <Icon name='facebook' />

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Icons = {
-    instagram: ( width = 35, height = 35, fill='#F8BA1B') => (
+    instagram: ( width = 25, height = 25, fill='#F8BA1B') => (
         <svg height={height} viewBox="0 0 512 512" width={width} xmlns="http://www.w3.org/2000/svg">
             <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="42.966156268" x2="469.0337477" y1="469.0296477168" y2="42.9620562848">
                 <stop offset="0" stopColor="#ffd600"/>
@@ -21,7 +21,7 @@ const Icons = {
         <path d="m423.371094 119.347656c0 16.964844-13.753906 30.71875-30.71875 30.71875-16.96875 0-30.722656-13.753906-30.722656-30.71875 0-16.96875 13.753906-30.722656 30.722656-30.722656 16.964844 0 30.71875 13.753906 30.718 30.722656zm0 0" fill="url(#c)"/>
     </svg>
     ),
-    facebook: ( width = 32, height = 32) => (
+    facebook: ( width = 25, height = 25) => (
         <svg enableBackground="new 0 0 24 24" height={height} viewBox="0 0 24 24" width={width}>
             <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-6.932 0-5.046 7.85-5.322 9h-3.487v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877c.188-2.824-.761-5.016 2.051-5.016z" fill="#3b5999"/>
         </svg>
@@ -463,7 +463,7 @@ plus : (width = '19', height = '19') => (
         </g>
     </svg>
   ),
-  arrowLeft : (width = 15 , height = 15) =>(
+  arrowLeft : (width = 10 , height = 10) =>(
         <svg width={width} height={height} viewBox="0 0 5 9" version="1.1" xmlns="http://www.w3.org/2000/svg" >
             <title>Path</title>
             <desc>Created with Sketch.</desc>
@@ -476,7 +476,7 @@ plus : (width = '19', height = '19') => (
             </g>
         </svg>
   ),
-  arrowRight : (width = 15 , height = 15 ) =>  (
+  arrowRight : (width = 10 , height = 10 ) =>  (
     <svg  width={width} height={height} viewBox="0 0 5 9" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <title>angle-arrow-down copy 3</title>
         <desc>Created with Sketch.</desc>

@@ -35,16 +35,19 @@ const Blog = () => {
                         <Text className='large blogDesc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
                     </Paper>
                 </Paper>
-               {
-                   blogItems.map((item,index)=>(
-                     <BlogCard
-                        title={item.title}
-                        description={item.description}
-                        button={item.button}
-                        src={item.img}
-                     />
-                   ))
-               }
+    
+                     {
+                        blogItems.map((item,index)=>(
+                            <BlogCard
+                                title={item.title}
+                                description={item.description}
+                                button={item.button}
+                                src={item.img}
+                            />
+                        ))
+                    }
+    
+
             <section>
                  <Pagination count='100' onPageChange={console.log}/>
             </section>

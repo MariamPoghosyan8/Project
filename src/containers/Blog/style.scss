@@ -22,3 +22,17 @@
         }
     }
 }
+@media screen and (max-width: 1060px){
+    .Blog{
+        .imageContent{
+            .textContent{
+                width: 100% !important;
+            }
+        }
+        .popularItems{
+            .items{
+                flex-direction: column;
+            }
+        }
+    }
+}

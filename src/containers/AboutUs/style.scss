@@ -4,14 +4,13 @@
     .content{
         .textContent{
             width: 75%;
-            height: 500px;
             background-color:$secondary-white;
             border-radius: 15px;
             .size{
                 width: 85%;
-                padding: 70px;
+                padding: 50px 50px 100px 50px;
                 *{
-                    padding-bottom: 50px;
+                    padding-bottom: 25px;
                 }
             }
         }
@@ -22,8 +21,127 @@
             background-color: $secondary-blue;
             border-radius: 15px;
             position: relative;
-            top: 50px;
+            top: 30px;
             right: 90px;
         }
     }
 }
+@media screen and (max-width: 950px){
+    .AboutUs{
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imgContent{
+                width: 400px;
+                top: 0;
+                right: 0;
+                margin-top: 50px;
+            }
+        }
+    }
+   }
+   @media screen and (max-width: 860px){
+    .AboutUs{
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .textContent{
+                .size{
+                    width: 100%;
+                    padding: 60px;
+                    .text{
+                        font-size: 16px;
+                    }
+                    *{
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+            .imgContent{
+                top: 0;
+                right: 0;
+                margin-top: 50px;
+                height: 330px !important;
+                padding: 20px;
+            }
+        }
+    }
+   }
+   @media screen and (max-width: 655px){
+    .AboutUs{
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .textContent{
+                .size{
+                    padding: 30px;
+                    .text{
+                        font-size: 14px;
+                    }
+                    *{
+                       
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .imgContent{
+                width: 350px;
+                top: 0;
+                right: 0;
+                margin-top: 50px;
+                height: 300px !important;
+                padding: 15px;
+            }
+        }
+    }
+   }
+   @media screen and (max-width: 585px){
+    .AboutUs{
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .textContent{
+                width: 100%;
+                .size{
+                    width: 100%;
+                    padding: 20px;
+                    *{
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .imgContent{
+                width: 350px;
+                top: 0;
+                right: 0;
+                margin-top: 50px;
+                height: 300px !important;
+                padding: 15px;
+            }
+        }
+    }
+   }
+   @media screen and (max-width: 450px){
+    .AboutUs{
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .textContent{
+                width: 100%;
+            }
+            .imgContent{
+                width: 270px;
+                top: 0;
+                right: 0;
+                margin-top: 50px;
+                height: 290px !important;
+                padding: 10px;
+            }
+        }
+    }
+   }
