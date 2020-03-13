@@ -33,10 +33,23 @@ header{
         width: 28%;
         justify-content: flex-end;
         .header-one{
-            display: none;
+            // display: none;
             .sign-up{
                 color: black;
                 margin-left: 20px;
+            }
+            .sign-in{
+                background-color: #0a3f8d;
+                color: white;
+                border: none;
+                outline: none;
+                padding: 12px 40px;
+                border-radius: 5px;
+                font-size: 14px;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.62px;
             }
         }
         .header-two{
@@ -76,7 +89,7 @@ header{
         }
         .header-tree{
             display: flex;
-            display: none;
+            // display: none;
             .header-two-img{
                 width: 50px;
                 height: 50px;
@@ -98,13 +111,13 @@ header{
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            display: none;
+            // display: none;
             .header-two-img{
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                margin-left: 30px;
-                background-image: url("../../../assets/Header photos/nara.jpg");
+                margin-left: 20px;
+                // background-image: url("../../../assets/Header photos/nara.jpg");
                 background-size: cover;
             }
             .search{
@@ -114,56 +127,61 @@ header{
                 opacity: 0.5;
                 background-image: url("../../../assets/Header photos/search.svg");
             }
-            .header-hover{
+            .header-hover-wrapper{
+                padding-top: 40px;
+                display: none;
                 position: absolute;
                 width: 280px;
-                height: 333px;
-                top: 110px;
-                border: solid 1px #9d979740;
-                border-radius: 15px;
-                display: none;
-                .data{
-                    display: flex;
-                    margin-top: 20px;
-                }
-                .img-hover{
-                    width: 70px;
-                    height: 70px;
-                }
-                .data-text{
-                    margin-left: 10px;
-                }
-                .name{
-                    font-size: 14px;
-                    font-weight: 900;
-                    padding-top: 15px;
-                }
-                .country{
-                    font-size: 12px;
-                    padding-top: 5px;
-                    color: black;
-                }
-                .border-bottom{
-                    border: 1px solid #979797;
-                    opacity: 0.2;
-                    width: 271px;
-                    background-color: black;
-                    margin: 0 auto;
-                    margin-top: 15px;
-                }
-                .hover-text{
-                    color: black;
-                    padding-left: 20px;
-                    padding-top: 9px;
-                    font-weight: 600;
-                    font-size: 14px;
-                }
-                .sign-out{
-                    color: #047CBC;
-                    padding-top: 15px;
+                top: 60px;
+                .header-hover{
+                    height: 100%;
+                    border: solid 1px #9d979740;
+                    border-radius: 15px;
+                    background-color: white;
+                    z-index: 99;
+                    .data{
+                        display: flex;
+                        margin-top: 20px;
+                    }
+                    .img-hover{
+                        width: 70px;
+                        height: 70px;
+                    }
+                    .data-text{
+                        margin-left: 10px;
+                    }
+                    .name{
+                        font-size: 14px;
+                        font-weight: 900;
+                        padding-top: 15px;
+                    }
+                    .country{
+                        font-size: 12px;
+                        padding-top: 5px;
+                        color: black;
+                    }
+                    .border-bottom{
+                        border: 1px solid #979797;
+                        opacity: 0.2;
+                        width: 271px;
+                        background-color: black;
+                        margin: 0 auto;
+                        margin-top: 15px;
+                    }
+                    .hover-text{
+                        color: black;
+                        padding-left: 20px;
+                        padding-top: 9px;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    .sign-out{
+                        color: #047CBC;
+                        padding: 15px;
+                    }
                 }
             }
-            .header-two-img:hover + .header-hover  {
+            &.header-four:hover > .header-hover-wrapper  {
                 display: block !important;
             }
         }
@@ -438,4 +456,9 @@ header{
         max-width: 350px;
         width: 80% !important;
     }
+}
+
+.google-but{
+    padding: 8px !important;
+    margin-top: 30px;
 }

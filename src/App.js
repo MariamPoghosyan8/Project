@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import classnames from 'classnames';
 import Header from './components/organisms/Header';
-import Footer from './components/organisms/Footer'
+import Footer from './components/organisms/Footer';
 
 import 'sass/animate.scss';
 import 'sass/main.scss';
@@ -21,6 +21,8 @@ import {
   DonashionList,
   DonashionPage,
 } from './containers'
+
+
 
 const mapStateToProps = ({ darkMode }) => ({ darkMode });
 
@@ -47,6 +49,7 @@ const App = ({
               <Route exact path="/DonashionPage" component={DonashionPage} />
           </Switch>
         </main>
+        <Footer/>
     </>
   )
 };

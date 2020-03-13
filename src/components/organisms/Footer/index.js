@@ -7,7 +7,9 @@ import{
 } from '../../../assets/Footer photos';
 
 import {Image} from 'components'
-
+import {
+    NavLink
+  } from 'react-router-dom';
 import './style.scss';
 
 import Paper from "components/atoms/Paper";
@@ -18,10 +20,34 @@ const Footer= ()=>{
                 <Image src={logo} className="logo-img"/>
             </Paper>
             <ul className="menu">
-                <li className="menu-lsit">DONATIONS LISTS</li>
-                <li>DONATIONS PAGE</li>
-                <li>ABOUT US</li>
-                <li>BLOG</li>
+                <li className="menu-lsit">
+                    <NavLink
+                            to="/DonashionList"
+                        >
+                            DONATIONS LISTS
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                            to="/DonashionPage"
+                         >
+                            DONATIONS PAGE
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                            to="/AboutUs"
+                         >
+                           ABOUT US
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                            to="/blog"
+                        >
+                           BLOG
+                    </NavLink>
+                </li>
             </ul>
             <Paper className="downloadStore">
                 <Image src={appstore} className="appstore-img"/>
